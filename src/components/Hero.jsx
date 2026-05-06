@@ -1,4 +1,5 @@
 import { ArrowRight, RadioTower, Zap, Shield } from 'lucide-react'
+import logo from '../assets/logo.jpg'
 
 export default function Hero() {
   return (
@@ -39,7 +40,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-gray-500 dark:text-gray-400 max-w-lg leading-relaxed">
-            RT-Digital menghadirkan koneksi internet berkualitas standar perusahaan langsung ke rumah Anda. 
+            PT. HOME NETWORK SOLUTION menghadirkan koneksi internet berkualitas standar perusahaan langsung ke rumah Anda. 
             Tanpa FUP, tanpa biaya tersembunyi — hanya kecepatan nyata yang bisa dinikmati seluruh keluarga.
           </p>
 
@@ -66,7 +67,7 @@ export default function Hero() {
               Lihat Paket <ArrowRight size={16} />
             </a>
             <a
-              href="https://wa.me/6283861483090?text=Halo%2C%20saya%20ingin%20info%20layanan%20RT-Digital%20di%20Sungai%20Tabuk."
+              href="https://wa.me/6283861483090?text=Halo%2C%20saya%20ingin%20info%20layanan%20PT.%20HOME%20NETWORK%20SOLUTION%20di%20Sungai%20Tabuk."
               target="_blank"
               rel="noreferrer"
               className="btn-whatsapp text-sm"
@@ -81,8 +82,8 @@ export default function Hero() {
           <div className="relative w-80 h-80">
             {/* Main circle */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-brand-500/20 to-brand-700/10 dark:from-brand-500/10 dark:to-brand-700/5 border border-brand-300/30 dark:border-brand-500/20 flex items-center justify-center">
-              <div className="w-48 h-48 rounded-full bg-gradient-to-br from-brand-500 to-brand-800 flex items-center justify-center shadow-2xl shadow-brand-500/40">
-                <RadioTower size={80} className="text-white" strokeWidth={1.5} />
+              <div className="w-48 h-48 rounded-full bg-white flex items-center justify-center shadow-2xl shadow-brand-500/20 overflow-hidden border-4 border-white dark:border-brand-900/50 p-3">
+                <img src={logo} alt="PT. HOME NETWORK SOLUTION" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
             {/* Orbit dots */}

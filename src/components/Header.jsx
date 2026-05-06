@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import { RadioTower, Sun, Moon, Menu, X } from 'lucide-react'
+import { Sun, Moon, Menu, X } from 'lucide-react'
+import logo from '../assets/logo.jpg'
 
 export default function Header({ darkMode, setDarkMode }) {
   const [scrolled, setScrolled] = useState(false)
@@ -31,11 +32,11 @@ export default function Header({ darkMode, setDarkMode }) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2 group">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center shadow-md shadow-brand-500/40 group-hover:scale-110 transition-transform">
-            <RadioTower size={18} className="text-white" strokeWidth={2.5} />
+          <div className="w-10 h-10 rounded-xl bg-white overflow-hidden flex items-center justify-center shadow-md shadow-brand-500/20 group-hover:scale-110 transition-transform flex-shrink-0 p-1">
+            <img src={logo} alt="Logo" className="w-full h-full object-contain" />
           </div>
           <div className="leading-tight">
-            <span className="font-display font-bold text-base text-brand-600 dark:text-brand-400">RT-Digital</span>
+            <span className="font-display font-bold text-[13px] sm:text-[15px] tracking-tight text-brand-600 dark:text-brand-400 uppercase">PT. HOME NETWORK SOLUTION</span>
             <span className="block text-[10px] text-gray-400 dark:text-gray-500 font-medium -mt-0.5">Layanan Wifi untuk RT-Digital</span>
           </div>
         </a>
@@ -78,7 +79,7 @@ export default function Header({ darkMode, setDarkMode }) {
 
           {/* CTA Button */}
           <a
-            href="https://wa.me/6283861483090?text=Halo%2C%20saya%20ingin%20daftar%20layanan%20RT-Digital."
+            href="https://wa.me/6283861483090?text=Halo%2C%20saya%20ingin%20daftar%20layanan%20PT.%20HOME%20NETWORK%20SOLUTION."
             target="_blank"
             rel="noreferrer"
             className="hidden md:flex btn-whatsapp text-xs px-4 py-2"
@@ -111,7 +112,7 @@ export default function Header({ darkMode, setDarkMode }) {
             </a>
           ))}
           <a
-            href="https://wa.me/6283861483090?text=Halo%2C%20saya%20ingin%20daftar%20layanan%20RT-Digital."
+            href="https://wa.me/6283861483090?text=Halo%2C%20saya%20ingin%20daftar%20layanan%20PT.%20HOME%20NETWORK%20SOLUTION."
             target="_blank"
             rel="noreferrer"
             className="btn-whatsapp mt-2 justify-center"

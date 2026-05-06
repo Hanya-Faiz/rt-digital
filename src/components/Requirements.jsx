@@ -111,7 +111,7 @@ export default function Requirements() {
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="https://wa.me/6283861483090?text=Halo%2C%20saya%20ingin%20mendaftar%20PSB%20WiFi%20Bulanan%20RT-Digital.%20Berikut%20dokumen%20saya%3A"
+                href="https://wa.me/6283861483090?text=Halo%2C%20saya%20ingin%20mendaftar%20PSB%20WiFi%20Bulanan%20PT.%20HOME%20NETWORK%20SOLUTION.%20Berikut%20dokumen%20saya%3A"
                 target="_blank"
                 rel="noreferrer"
                 id="register-cta-btn"

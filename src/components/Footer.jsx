@@ -1,4 +1,5 @@
-import { RadioTower, MapPin, Phone, MessageCircle } from 'lucide-react'
+import { MapPin, Phone, MessageCircle } from 'lucide-react'
+import logo from '../assets/logo.jpg'
 
 export default function Footer() {
   return (
@@ -8,11 +9,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center shadow-md shadow-brand-500/30">
-                <RadioTower size={18} className="text-white" strokeWidth={2.5} />
+              <div className="w-10 h-10 rounded-xl bg-white overflow-hidden flex items-center justify-center shadow-md shadow-brand-500/30 p-1 flex-shrink-0">
+                <img src={logo} alt="Logo" className="w-full h-full object-contain" />
               </div>
               <div>
-                <span className="font-display font-bold text-base text-brand-600 dark:text-brand-400">RT-Digital</span>
+                <span className="font-display font-bold text-[13px] sm:text-sm tracking-tight text-brand-600 dark:text-brand-400 uppercase">PT. HOME NETWORK SOLUTION</span>
                 <span className="block text-[10px] text-gray-400 font-medium">Layanan Wifi untuk RT-Digital</span>
               </div>
             </div>
@@ -74,7 +75,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-gray-100 dark:border-brand-900/30 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-[11px] text-gray-400 dark:text-gray-600">
-          <p>© {new Date().getFullYear()} RT-Digital. Melayani Sungai Tabuk & Sekitarnya.</p>
+          <p>© {new Date().getFullYear()} PT. HOME NETWORK SOLUTION. Melayani Sungai Tabuk & Sekitarnya.</p>
           <p>Dibuat dengan ❤️ untuk komunitas lokal</p>
         </div>
       </div>

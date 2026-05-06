@@ -79,7 +79,7 @@ export default function Features() {
             </span>
           </h2>
           <p className="section-sub max-w-xl mx-auto">
-            RT-Digital berdiri di atas fondasi profesionalisme, kejujuran harga, dan kepedulian terhadap komunitas. Inilah yang membedakan kami.
+            PT. HOME NETWORK SOLUTION berdiri di atas fondasi profesionalisme, kejujuran harga, dan kepedulian terhadap komunitas. Inilah yang membedakan kami.
           </p>
         </div>
 
