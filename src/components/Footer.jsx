@@ -74,9 +74,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-100 dark:border-brand-900/30 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-[11px] text-gray-400 dark:text-gray-600">
-          <p>© {new Date().getFullYear()} PT. HOME NETWORK SOLUTION. Melayani Sungai Tabuk & Sekitarnya.</p>
-          <p>Dibuat dengan ❤️ untuk komunitas lokal</p>
+        <div className="border-t border-gray-100 dark:border-brand-900/30 pt-6 flex flex-col sm:flex-row justify-center items-center gap-2 text-[11px] text-gray-400 dark:text-gray-600">
+          <p>© {new Date().getFullYear()} PT. HOME NETWORK SOLUTION</p>
         </div>
       </div>
     </footer>
