@@ -22,7 +22,7 @@ export default function Header({ darkMode, setDarkMode }) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         mobileOpen
-          ? 'bg-white dark:bg-[#0d1a2e] shadow-lg shadow-brand-500/10 border-b border-gray-100 dark:border-brand-800/50'
+          ? 'bg-white dark:bg-[#050b14] shadow-xl shadow-brand-500/20 border-b border-gray-100 dark:border-brand-500/30'
           : scrolled
           ? 'bg-white/90 dark:bg-[#080f1e]/90 backdrop-blur-md shadow-lg shadow-brand-500/10 border-b border-gray-100 dark:border-brand-900/40'
           : 'bg-transparent'
@@ -99,7 +99,7 @@ export default function Header({ darkMode, setDarkMode }) {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white dark:bg-[#0d1a2e] border-t border-gray-100 dark:border-brand-800/50 px-4 py-3 flex flex-col gap-1 shadow-xl">
+        <div className="md:hidden bg-white dark:bg-[#050b14] border-t border-gray-100 dark:border-brand-500/30 px-4 py-4 flex flex-col gap-2 shadow-2xl">
           {navLinks.map(link => (
             <a
               key={link.href}
