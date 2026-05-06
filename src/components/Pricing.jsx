@@ -129,7 +129,7 @@ function MonthlyCard() {
         <div className="grid grid-cols-2 gap-2.5 mb-6">
           {[
             { icon: Zap, label: 'Tanpa FUP', desc: 'Kecepatan penuh 24/7' },
-            { icon: Shield, label: 'Gratis Instalasi*', desc: 'Teknisi profesional' },
+            { icon: Shield, label: 'Pemasangan Cepat', desc: 'Teknisi profesional' },
             { icon: Home, label: 'Sinyal Luas', desc: 'Jangkau seluruh rumah' },
             { icon: CheckCircle2, label: 'Kualitas PT', desc: 'Standar perusahaan' },
           ].map(({ icon: Icon, label, desc }) => (
@@ -154,9 +154,6 @@ function MonthlyCard() {
           <MessageCircle size={16} /> Daftar Paket Bulanan
         </a>
 
-        <p className="text-[10px] text-gray-400 dark:text-gray-500 text-center mt-3">
-          *Gratis instalasi untuk area tertentu. Hubungi CS untuk detail.
-        </p>
       </div>
     </div>
   )

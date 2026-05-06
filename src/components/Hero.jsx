@@ -1,4 +1,4 @@
-import { ArrowRight, Wifi, Zap, Shield } from 'lucide-react'
+import { ArrowRight, RadioTower, Zap, Shield } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -48,7 +48,7 @@ export default function Hero() {
             {[
               { icon: Zap, label: 'Tanpa FUP', color: 'text-amber-500' },
               { icon: Shield, label: 'Infrastruktur PT', color: 'text-brand-500' },
-              { icon: Wifi, label: 'Sinyal Luas', color: 'text-accent-500' },
+              { icon: RadioTower, label: 'Sinyal Luas', color: 'text-accent-500' },
             ].map(({ icon: Icon, label, color }) => (
               <span key={label} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/60 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-sm font-medium text-gray-700 dark:text-gray-300 shadow-sm">
                 <Icon size={15} className={color} />
@@ -82,7 +82,7 @@ export default function Hero() {
             {/* Main circle */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-brand-500/20 to-brand-700/10 dark:from-brand-500/10 dark:to-brand-700/5 border border-brand-300/30 dark:border-brand-500/20 flex items-center justify-center">
               <div className="w-48 h-48 rounded-full bg-gradient-to-br from-brand-500 to-brand-800 flex items-center justify-center shadow-2xl shadow-brand-500/40">
-                <Wifi size={80} className="text-white" strokeWidth={1.5} />
+                <RadioTower size={80} className="text-white" strokeWidth={1.5} />
               </div>
             </div>
             {/* Orbit dots */}

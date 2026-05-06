@@ -1,4 +1,4 @@
-import { Wifi, MapPin, Phone, MessageCircle } from 'lucide-react'
+import { RadioTower, MapPin, Phone, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -9,11 +9,11 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center shadow-md shadow-brand-500/30">
-                <Wifi size={18} className="text-white" strokeWidth={2.5} />
+                <RadioTower size={18} className="text-white" strokeWidth={2.5} />
               </div>
               <div>
                 <span className="font-display font-bold text-base text-brand-600 dark:text-brand-400">RT-Digital</span>
-                <span className="block text-[10px] text-gray-400 font-medium">ISP Lokal Terpercaya</span>
+                <span className="block text-[10px] text-gray-400 font-medium">Layanan Wifi untuk RT-Digital</span>
               </div>
             </div>
             <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed max-w-xs">

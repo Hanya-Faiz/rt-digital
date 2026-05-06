@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Wifi, Sun, Moon, Menu, X } from 'lucide-react'
+import { RadioTower, Sun, Moon, Menu, X } from 'lucide-react'
 
 export default function Header({ darkMode, setDarkMode }) {
   const [scrolled, setScrolled] = useState(false)
@@ -21,7 +21,7 @@ export default function Header({ darkMode, setDarkMode }) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || mobileOpen
           ? 'bg-white/90 dark:bg-[#080f1e]/90 backdrop-blur-md shadow-lg shadow-brand-500/10 border-b border-gray-100 dark:border-brand-900/40'
           : 'bg-transparent'
       }`}
@@ -30,11 +30,11 @@ export default function Header({ darkMode, setDarkMode }) {
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2 group">
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center shadow-md shadow-brand-500/40 group-hover:scale-110 transition-transform">
-            <Wifi size={18} className="text-white" strokeWidth={2.5} />
+            <RadioTower size={18} className="text-white" strokeWidth={2.5} />
           </div>
           <div className="leading-tight">
             <span className="font-display font-bold text-base text-brand-600 dark:text-brand-400">RT-Digital</span>
-            <span className="block text-[10px] text-gray-400 dark:text-gray-500 font-medium -mt-0.5">Sungai Tabuk & Sekitarnya</span>
+            <span className="block text-[10px] text-gray-400 dark:text-gray-500 font-medium -mt-0.5">Layanan Wifi untuk RT-Digital</span>
           </div>
         </a>
 
